@@ -13,6 +13,9 @@
 		AC18FB4F2A3331310055CC99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC18FB4E2A3331310055CC99 /* Preview Assets.xcassets */; };
 		AC18FB572A33425E0055CC99 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18FB562A33425E0055CC99 /* CategoryView.swift */; };
 		AC18FB5A2A3342A60055CC99 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18FB592A3342A60055CC99 /* Manager.swift */; };
+		AC18FB5C2A3342E20055CC99 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18FB5B2A3342E20055CC99 /* APIManager.swift */; };
+		AC18FB5F2A3346140055CC99 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18FB5E2A3346140055CC99 /* String.swift */; };
+		AC18FB612A3346350055CC99 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18FB602A3346350055CC99 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		AC18FB4E2A3331310055CC99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC18FB562A33425E0055CC99 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		AC18FB592A3342A60055CC99 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		AC18FB5B2A3342E20055CC99 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		AC18FB5E2A3346140055CC99 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		AC18FB602A3346350055CC99 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,7 @@
 		AC18FB462A33312F0055CC99 /* Quizy */ = {
 			isa = PBXGroup;
 			children = (
+				AC18FB5D2A3346020055CC99 /* Extension */,
 				AC18FB582A33428B0055CC99 /* APIManager */,
 				AC18FB552A3342410055CC99 /* View */,
 				AC18FB472A33312F0055CC99 /* QuizyApp.swift */,
@@ -85,8 +92,18 @@
 			isa = PBXGroup;
 			children = (
 				AC18FB592A3342A60055CC99 /* Manager.swift */,
+				AC18FB5B2A3342E20055CC99 /* APIManager.swift */,
 			);
 			path = APIManager;
+			sourceTree = "<group>";
+		};
+		AC18FB5D2A3346020055CC99 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AC18FB5E2A3346140055CC99 /* String.swift */,
+				AC18FB602A3346350055CC99 /* Data.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC18FB612A3346350055CC99 /* Data.swift in Sources */,
+				AC18FB5F2A3346140055CC99 /* String.swift in Sources */,
 				AC18FB4A2A33312F0055CC99 /* ContentView.swift in Sources */,
 				AC18FB482A33312F0055CC99 /* QuizyApp.swift in Sources */,
+				AC18FB5C2A3342E20055CC99 /* APIManager.swift in Sources */,
 				AC18FB572A33425E0055CC99 /* CategoryView.swift in Sources */,
 				AC18FB5A2A3342A60055CC99 /* Manager.swift in Sources */,
 			);
