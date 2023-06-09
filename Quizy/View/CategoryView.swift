@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct CategoryView: View {
+    @State private var selectedCategoryIndex = 0
+    let columns = [
+            GridItem(.fixed(100)),
+            GridItem(.flexible()),
+            
+        ]
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -18,18 +24,18 @@ struct CategoryView_Previews: PreviewProvider {
         CategoryView()
     }
 }
-extension CategoryView {
-    class ViewModel: ObservableObject {
-        @Published var numberQuestions: Int = 10 {
-            didSet {
-                if numberQuestions == 0 {
-                    numberQuestions = 1
-                }
-
-                if numberQuestions == 51 {
-                    numberQuestions = 50
-                }
-            }
-        }
-    }
-}
+//extension CategoryView {
+//    class ViewModel: ObservableObject {
+//        @Published var numberQuestions: Int = 10 {
+//            didSet {
+//                if numberQuestions == 0 {
+//                    numberQuestions = 1
+//                }
+//
+//                if numberQuestions == 51 {
+//                    numberQuestions = 50
+//                }
+//            }
+//        }
+//    }
+//}
