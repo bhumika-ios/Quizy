@@ -16,6 +16,7 @@
 		AC18FB5C2A3342E20055CC99 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18FB5B2A3342E20055CC99 /* APIManager.swift */; };
 		AC18FB5F2A3346140055CC99 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18FB5E2A3346140055CC99 /* String.swift */; };
 		AC18FB612A3346350055CC99 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18FB602A3346350055CC99 /* Data.swift */; };
+		AC18FB632A3349650055CC99 /* SaveSystemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18FB622A3349650055CC99 /* SaveSystemManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		AC18FB5B2A3342E20055CC99 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		AC18FB5E2A3346140055CC99 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		AC18FB602A3346350055CC99 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		AC18FB622A3349650055CC99 /* SaveSystemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveSystemManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				AC18FB592A3342A60055CC99 /* Manager.swift */,
 				AC18FB5B2A3342E20055CC99 /* APIManager.swift */,
+				AC18FB622A3349650055CC99 /* SaveSystemManager.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC18FB612A3346350055CC99 /* Data.swift in Sources */,
+				AC18FB632A3349650055CC99 /* SaveSystemManager.swift in Sources */,
 				AC18FB5F2A3346140055CC99 /* String.swift in Sources */,
 				AC18FB4A2A33312F0055CC99 /* ContentView.swift in Sources */,
 				AC18FB482A33312F0055CC99 /* QuizyApp.swift in Sources */,
