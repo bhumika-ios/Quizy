@@ -147,8 +147,8 @@ extension Manager.API {
                 return "Entertainment: Books"
             case .entertainmentFilms:
                 return "Entertainment: Film"
-//            case .entertainmentMusic:
-//                return "Entertainment: Music"
+            case .entertainmentMusic:
+                return "Entertainment: Music"
 //            case .entertainmentMusicalsAndTheatres:
 //                return "Entertainment: Musicals & Theatres"
 //            case .entertainmentTelevision:
@@ -189,8 +189,7 @@ extension Manager.API {
 //                return "Entertainment: Japanese Anime & Manga"
 //            case .entertainmentCartoonAndAnimations:
 //                return "Entertainment: Cartoon & Animations"
-            case .entertainmentMusic:
-                <#code#>
+          
             }
         }
 
