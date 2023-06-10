@@ -28,13 +28,13 @@ extension Manager {
             var components = URLComponents()
             components.scheme = "https"
             components.host = "opentdb.com"
-            components.path = "/api.php"
+            components.path = "/api.php?"
 
             var queryItems: [URLQueryItem] = [
-                URLQueryItem(name: "amount", value: String(amount))
+                URLQueryItem(name: "amount=", value: String(amount))
             ]
             if category != .all {
-                queryItems.append(URLQueryItem(name: "category", value: String(category.categoryId)))
+                queryItems.append(URLQueryItem(name: "&category=", value: String(category.categoryId)))
             }
             components.queryItems = queryItems
             guard let url = components.url else { throw QuestionError.badURL }
