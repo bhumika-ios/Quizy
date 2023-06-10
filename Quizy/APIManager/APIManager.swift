@@ -103,9 +103,9 @@ extension Manager.API {
     public enum QuestionCategory: CaseIterable {
         case all
         case generalKnowledge
-        case entertainmentBooks
-        case entertainmentFilms
-        case entertainmentMusic
+//        case entertainmentBooks
+//        case entertainmentFilms
+//        case entertainmentMusic
 //        case entertainmentMusicalsAndTheatres
 //        case entertainmentTelevision
 //        case entertainmentVideoGames
@@ -142,13 +142,13 @@ extension Manager.API {
             case .all:
                 return "All"
             case .generalKnowledge:
-                return "General Knowledge"
-            case .entertainmentBooks:
-                return "Entertainment: Books"
-            case .entertainmentFilms:
-                return "Entertainment: Film"
-            case .entertainmentMusic:
-                return "Entertainment: Music"
+                return "G.K"
+//            case .entertainmentBooks:
+//                return "Books"
+//            case .entertainmentFilms:
+//                return "Film"
+//            case .entertainmentMusic:
+//                return "Music"
 //            case .entertainmentMusicalsAndTheatres:
 //                return "Entertainment: Musicals & Theatres"
 //            case .entertainmentTelevision:
@@ -158,11 +158,11 @@ extension Manager.API {
 //            case .entertainmentBoardGames:
 //                return "Entertainment: Board Games"
             case .scienceAndNature:
-                return "Science & Nature"
+                return "Science"
             case .scienceComputers:
-                return "Science: Computers"
+                return "Computers"
             case .scienceMathematics:
-                return "Science: Mathematics"
+                return "Mathematics"
             case .mythology:
                 return "Mythology"
             case .sports:
@@ -199,12 +199,12 @@ extension Manager.API {
                 return 0
             case .generalKnowledge:
                 return 9
-            case .entertainmentBooks:
-                return 10
-            case .entertainmentFilms:
-                return 11
-            case .entertainmentMusic:
-                return 12
+//            case .entertainmentBooks:
+//                return 10
+//            case .entertainmentFilms:
+//                return 11
+//            case .entertainmentMusic:
+//                return 12
 //            case .entertainmentMusicalsAndTheatres:
 //                return 13
 //            case .entertainmentTelevision:
