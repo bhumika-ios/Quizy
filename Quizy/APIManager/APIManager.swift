@@ -142,7 +142,7 @@ extension Manager.API {
             case .all:
                 return "All"
             case .generalKnowledge:
-                return "G.K"
+                return "General Knowledge"
 //            case .entertainmentBooks:
 //                return "Books"
 //            case .entertainmentFilms:
