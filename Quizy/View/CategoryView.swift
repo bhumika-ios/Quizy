@@ -11,7 +11,7 @@ struct CategoryView: View {
     @State private var selectedCategoryIndex = 0
     let columns = [
             GridItem(.fixed(190)),
-            GridItem(.flexible()),
+            GridItem(.fixed(190)),
         ]
     var body: some View {
         NavigationView{
@@ -35,22 +35,23 @@ struct CategoryView: View {
                     ZStack{
                         Color("Blue")
                         .edgesIgnoringSafeArea(.all)
-                        VStack{
-                            ScrollView(showsIndicators: false) {
+                     //   VStack{
+                            ScrollView() {
                                 LazyVGrid(columns: columns, spacing: 10) {
                                     ForEach(0 ..< Manager.API.QuestionCategory.allCases.count, id: \.self) {cat in
                                         Button(action: {
                                             //   isPressed = true
                                         }, label: {
                                             Text(Manager.API.QuestionCategory.allCases[cat].categoryName)
-                                                .foregroundColor(cat == selectedCategoryIndex ? .white : .purple)
+                                                .foregroundColor(cat == selectedCategoryIndex ? .white : Color("Blue"))
+                                                .fontWeight(.bold)
                                                 .onTapGesture {
                                                     selectedCategoryIndex = cat
                                                 }
                                         })
-                                        .padding()
+                                      //  .padding()
                                         .frame(width: 140, height: 80)
-                                        .background(cat == selectedCategoryIndex  ? Color.purple : Color.white)
+                                        .background(cat == selectedCategoryIndex  ? Color("Blue") : Color.white)
                                         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                                         .onTapGesture {
                                             selectedCategoryIndex = cat
@@ -60,15 +61,16 @@ struct CategoryView: View {
                                     // .padding()
                                 }
                             }
-                            .frame(maxWidth:.infinity , maxHeight: .infinity)
+                          //  .frame(maxWidth:.infinity , maxHeight: .infinity)
                             .background(
-                                Color("BG")
+                                Color("BlueLight1")
                                 // apply custom corner
                                     .clipShape(CustomCorner(corner: [.topLeft,.topRight], radius: 25))
                                     .ignoresSafeArea()
                             )
-                        }
-                        // .padding()
+                      //  }
+                         .padding()
+                         
                     }
                     .padding(.vertical,-85)
               //  }
@@ -83,18 +85,3 @@ struct CategoryView_Previews: PreviewProvider {
         CategoryView()
     }
 }
-//extension CategoryView {
-//    class ViewModel: ObservableObject {
-//        @Published var numberQuestions: Int = 10 {
-//            didSet {
-//                if numberQuestions == 0 {
-//                    numberQuestions = 1
-//                }
-//
-//                if numberQuestions == 51 {
-//                    numberQuestions = 50
-//                }
-//            }
-//        }
-//    }
-//}
