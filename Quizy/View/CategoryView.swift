@@ -10,15 +10,41 @@ import SwiftUI
 struct CategoryView: View {
     @State private var selectedCategoryIndex = 0
     let columns = [
-            GridItem(.fixed(100)),
+            GridItem(.fixed(190)),
             GridItem(.flexible()),
-            
         ]
     var body: some View {
         NavigationView{
             ZStack{
                 Color("BG")
                     .edgesIgnoringSafeArea(.all)
+                VStack{
+                    ScrollView(showsIndicators: false) {
+                        LazyVGrid(columns: columns, spacing: 10) {
+                            ForEach(0 ..< Manager.API.QuestionCategory.allCases.count, id: \.self) {cat in
+                                Button(action: {
+                                    //   isPressed = true
+                                }, label: {
+                                    Text(Manager.API.QuestionCategory.allCases[cat].categoryName)
+                                        .foregroundColor(cat == selectedCategoryIndex ? .white : .purple)
+                                        .onTapGesture {
+                                            selectedCategoryIndex = cat
+                                        }
+                                })
+                                .padding()
+                                .frame(width: 140, height: 80)
+                                .background(cat == selectedCategoryIndex  ? Color.purple : Color.white)
+                                .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                                .onTapGesture {
+                                    selectedCategoryIndex = cat
+                                }
+                                .padding()
+                            }
+                            // .padding()
+                        }
+                    }
+                }
+               // .padding()
             }
         }
     }
