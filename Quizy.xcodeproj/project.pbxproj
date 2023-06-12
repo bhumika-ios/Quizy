@@ -19,6 +19,18 @@
 		AC18FB632A3349650055CC99 /* SaveSystemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC18FB622A3349650055CC99 /* SaveSystemManager.swift */; };
 		AC3C36352A346383005EFFB5 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C36342A346383005EFFB5 /* CustomCorner.swift */; };
 		AC3C36372A348BC7005EFFB5 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C36362A348BC7005EFFB5 /* QuestionView.swift */; };
+		AC3C36392A348CAF005EFFB5 /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C36382A348CAF005EFFB5 /* Views.swift */; };
+		AC3C363C2A349117005EFFB5 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C363B2A349117005EFFB5 /* DesignSystem.swift */; };
+		AC3C363E2A349134005EFFB5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C363D2A349134005EFFB5 /* Color.swift */; };
+		AC3C36402A349188005EFFB5 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C363F2A349188005EFFB5 /* Padding.swift */; };
+		AC3C36432A3491E0005EFFB5 /* MultipleChoiceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C36422A3491E0005EFFB5 /* MultipleChoiceButton.swift */; };
+		AC3C36462A34921F005EFFB5 /* LottieSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AC3C36452A34921F005EFFB5 /* LottieSwiftUI */; };
+		AC3C36482A349273005EFFB5 /* AnswerTrackerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C36472A349273005EFFB5 /* AnswerTrackerManager.swift */; };
+		AC3C364A2A3492C6005EFFB5 /* ConclusionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C36492A3492C6005EFFB5 /* ConclusionView.swift */; };
+		AC3C364F2A349453005EFFB5 /* correct.json in Resources */ = {isa = PBXBuildFile; fileRef = AC3C364C2A349453005EFFB5 /* correct.json */; };
+		AC3C36502A349453005EFFB5 /* wave.json in Resources */ = {isa = PBXBuildFile; fileRef = AC3C364D2A349453005EFFB5 /* wave.json */; };
+		AC3C36512A349453005EFFB5 /* wrong.json in Resources */ = {isa = PBXBuildFile; fileRef = AC3C364E2A349453005EFFB5 /* wrong.json */; };
+		AC74F10F2A36FAF400AEAC6B /* BooleanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74F10E2A36FAF400AEAC6B /* BooleanButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +47,17 @@
 		AC18FB622A3349650055CC99 /* SaveSystemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveSystemManager.swift; sourceTree = "<group>"; };
 		AC3C36342A346383005EFFB5 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		AC3C36362A348BC7005EFFB5 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		AC3C36382A348CAF005EFFB5 /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
+		AC3C363B2A349117005EFFB5 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		AC3C363D2A349134005EFFB5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		AC3C363F2A349188005EFFB5 /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
+		AC3C36422A3491E0005EFFB5 /* MultipleChoiceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceButton.swift; sourceTree = "<group>"; };
+		AC3C36472A349273005EFFB5 /* AnswerTrackerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTrackerManager.swift; sourceTree = "<group>"; };
+		AC3C36492A3492C6005EFFB5 /* ConclusionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConclusionView.swift; sourceTree = "<group>"; };
+		AC3C364C2A349453005EFFB5 /* correct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = correct.json; sourceTree = "<group>"; };
+		AC3C364D2A349453005EFFB5 /* wave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wave.json; sourceTree = "<group>"; };
+		AC3C364E2A349453005EFFB5 /* wrong.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wrong.json; sourceTree = "<group>"; };
+		AC74F10E2A36FAF400AEAC6B /* BooleanButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3C36462A34921F005EFFB5 /* LottieSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +91,9 @@
 		AC18FB462A33312F0055CC99 /* Quizy */ = {
 			isa = PBXGroup;
 			children = (
+				AC3C364B2A349453005EFFB5 /* Lottie */,
+				AC3C36412A3491BF005EFFB5 /* Buttons */,
+				AC3C363A2A349100005EFFB5 /* DesignSystem */,
 				AC18FB5D2A3346020055CC99 /* Extension */,
 				AC18FB582A33428B0055CC99 /* APIManager */,
 				AC18FB552A3342410055CC99 /* View */,
@@ -91,6 +118,8 @@
 			children = (
 				AC18FB562A33425E0055CC99 /* CategoryView.swift */,
 				AC3C36362A348BC7005EFFB5 /* QuestionView.swift */,
+				AC3C36382A348CAF005EFFB5 /* Views.swift */,
+				AC3C36492A3492C6005EFFB5 /* ConclusionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -101,6 +130,7 @@
 				AC18FB592A3342A60055CC99 /* Manager.swift */,
 				AC18FB5B2A3342E20055CC99 /* APIManager.swift */,
 				AC18FB622A3349650055CC99 /* SaveSystemManager.swift */,
+				AC3C36472A349273005EFFB5 /* AnswerTrackerManager.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -113,6 +143,35 @@
 				AC3C36342A346383005EFFB5 /* CustomCorner.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		AC3C363A2A349100005EFFB5 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				AC3C363B2A349117005EFFB5 /* DesignSystem.swift */,
+				AC3C363D2A349134005EFFB5 /* Color.swift */,
+				AC3C363F2A349188005EFFB5 /* Padding.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		AC3C36412A3491BF005EFFB5 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				AC3C36422A3491E0005EFFB5 /* MultipleChoiceButton.swift */,
+				AC74F10E2A36FAF400AEAC6B /* BooleanButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		AC3C364B2A349453005EFFB5 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				AC3C364C2A349453005EFFB5 /* correct.json */,
+				AC3C364D2A349453005EFFB5 /* wave.json */,
+				AC3C364E2A349453005EFFB5 /* wrong.json */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +190,9 @@
 			dependencies = (
 			);
 			name = Quizy;
+			packageProductDependencies = (
+				AC3C36452A34921F005EFFB5 /* LottieSwiftUI */,
+			);
 			productName = Quizy;
 			productReference = AC18FB442A33312F0055CC99 /* Quizy.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +221,9 @@
 				Base,
 			);
 			mainGroup = AC18FB3B2A33312F0055CC99;
+			packageReferences = (
+				AC3C36442A34921F005EFFB5 /* XCRemoteSwiftPackageReference "Lottie-SwiftUI" */,
+			);
 			productRefGroup = AC18FB452A33312F0055CC99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -173,8 +238,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3C36512A349453005EFFB5 /* wrong.json in Resources */,
+				AC3C36502A349453005EFFB5 /* wave.json in Resources */,
 				AC18FB4F2A3331310055CC99 /* Preview Assets.xcassets in Resources */,
 				AC18FB4C2A3331310055CC99 /* Assets.xcassets in Resources */,
+				AC3C364F2A349453005EFFB5 /* correct.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,13 +253,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3C363C2A349117005EFFB5 /* DesignSystem.swift in Sources */,
 				AC3C36372A348BC7005EFFB5 /* QuestionView.swift in Sources */,
+				AC3C36432A3491E0005EFFB5 /* MultipleChoiceButton.swift in Sources */,
+				AC3C364A2A3492C6005EFFB5 /* ConclusionView.swift in Sources */,
+				AC3C36392A348CAF005EFFB5 /* Views.swift in Sources */,
 				AC18FB612A3346350055CC99 /* Data.swift in Sources */,
+				AC3C363E2A349134005EFFB5 /* Color.swift in Sources */,
 				AC18FB632A3349650055CC99 /* SaveSystemManager.swift in Sources */,
 				AC18FB5F2A3346140055CC99 /* String.swift in Sources */,
 				AC3C36352A346383005EFFB5 /* CustomCorner.swift in Sources */,
 				AC18FB4A2A33312F0055CC99 /* ContentView.swift in Sources */,
+				AC3C36402A349188005EFFB5 /* Padding.swift in Sources */,
 				AC18FB482A33312F0055CC99 /* QuizyApp.swift in Sources */,
+				AC3C36482A349273005EFFB5 /* AnswerTrackerManager.swift in Sources */,
+				AC74F10F2A36FAF400AEAC6B /* BooleanButton.swift in Sources */,
 				AC18FB5C2A3342E20055CC99 /* APIManager.swift in Sources */,
 				AC18FB572A33425E0055CC99 /* CategoryView.swift in Sources */,
 				AC18FB5A2A3342A60055CC99 /* Manager.swift in Sources */,
@@ -395,6 +471,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC3C36442A34921F005EFFB5 /* XCRemoteSwiftPackageReference "Lottie-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LukasHromadnik/Lottie-SwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC3C36452A34921F005EFFB5 /* LottieSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC3C36442A34921F005EFFB5 /* XCRemoteSwiftPackageReference "Lottie-SwiftUI" */;
+			productName = LottieSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC18FB3C2A33312F0055CC99 /* Project object */;
 }
