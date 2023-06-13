@@ -41,7 +41,6 @@ extension Views {
             isAnimating: Binding<Bool>
         ) -> some View {
             VStack(spacing: DesignSystem.Padding.microPadding) {
-                viewModel.image
                 Text(viewModel.title)
                     .bold()
                     .padding(.bottom, DesignSystem.Padding.macroPadding)
@@ -85,6 +84,7 @@ extension Views {
                     SwiftUI.Button(action: { currentQuestion += 1 }) {
                         VStack{
                             Text("Next Question")
+                                .fontWeight(.bold)
                                 .foregroundColor(.white)
                         }
                         
@@ -104,6 +104,7 @@ extension Views {
                     ) {
                         VStack{
                             Text("Finish quiz")
+                                .fontWeight(.bold)
                                 .foregroundColor(.white)
                         }
                         .background{
@@ -123,9 +124,8 @@ extension Views {
 extension Views.QuestionView {
     class ViewModel: ObservableObject {
         let manager = Manager.API()
-        @Published var category: Manager.API.QuestionCategory = .all
+        @Published var category: Manager.API.QuestionCategory = .generalKnowledge
         @Published var title: String = ""
-        @Published var image: Image = .init("Logo")
         @Published var question: String = ""
         @Published var answerType: Manager.API.AnswerTypes = .multiple
         @Published var answers: [String] = []
@@ -143,7 +143,6 @@ extension Views.QuestionView {
 
         public func update(question: Question) {
             self.title = question.category.categoryName
-            self.image = Image(question.category.categoryName)
             self.question = question.question
             self.answerType = question.type
             self.answers.removeAll()
