@@ -22,24 +22,25 @@ extension Views{
             NavigationView{
                 
                 VStack{
+                  
                     ZStack{
                         Color("Blue")
                             .edgesIgnoringSafeArea(.all)
-                        
+
                         Image("q1")
                             .resizable()
                             .frame(width: 150,height: 80)
                             .offset(x:-105,y:-165)
-                        
+
                         Image("q2")
                             .resizable()
                             .frame(width: 450,height: 220)
                             .offset(y:-20)
-                        
+
                     }
                     
-                    ZStack(){
-                        ScrollView(.vertical) {
+                    ZStack{
+                     ScrollView(.vertical) {
                             LazyVGrid(columns: columns, spacing: 5) {
                                 ForEach(0 ..< Manager.API.QuestionCategory.allCases.count, id: \.self) {cat in
                                     Button(action: {
@@ -47,6 +48,7 @@ extension Views{
                                         selectedCategoryIndex = cat
                                      
                                     }, label: {
+                                        
                                         Text(Manager.API.QuestionCategory.allCases[cat].categoryName)
                                             .foregroundColor(cat == selectedCategoryIndex ? .white : Color("Blue"))
                                             .fontWeight(.bold)
@@ -57,18 +59,20 @@ extension Views{
 //                                                  self.alert = true
 //                                                  selectedCategoryIndex = cat
 //                                            }
-                                        
+                                            .padding(5)
                                     })
-                                    .padding(10)
+                                   // .padding(10)
                                     
                                 }
-                                .padding(.vertical,-5)
+                             //   .padding(.vertical,-5)
                                
                             }
+                            .offset(y:20)
                           //  .padding()
-                        }
+                 }
                         
-                       // .padding()
+                   //  .padding(.vertical,1)
+                   //  .padding(.vertical,-15)
                         //  .frame(maxWidth:.infinity , maxHeight: .infinity)
                         .background(
                             Color("BlueLight1")
@@ -82,45 +86,89 @@ extension Views{
 //                        if self.alert{
 //                            AlertView(viewModel: .init(), alert: self.$alert)
 //                        }
-                        VStack{
-                            NavigationLink(destination: QuestionView(viewModel: questionsViewModel)
-                                           
-                                .navigationBarHidden(true)
-                                .task {
-                                    do {
-                                        Manager.AnswerTracker.shared.startQuiz(questionAmount: viewModel.numberQuestions)
-                                        Manager.AnswerTracker.shared.startQuiz(questionAmount: viewModel.numberQuestions)
-                                        let questions = try await Manager.API.shared.fetchQuestions(
-                                            category: Manager.API.QuestionCategory.allCases[selectedCategoryIndex],  answerType: Manager.API.AnswerTypes.multiple,
-                                            amount: viewModel.numberQuestions
-                                        )
-                                        questionsViewModel.update(question: questions.first!)
-                                    } catch {
-                                        print(error)
-                                    }
-                                }
-                                           
-                            ){
-                                
-                                Text("Start")
-                                    .fontWeight(.semibold)
-                                    .foregroundColor(.white)
-                                  
-                            }
-                            
-                           
-                        }
-                        .background{
-                            RoundedRectangle(cornerRadius: 8)
-                                .fill(Color("Blue"))
-                                .frame(width: 400, height: 50)
-                        }
-                        .offset(y:198)
+                        
+//                        VStack{
+//                            NavigationLink(destination: QuestionView(viewModel: questionsViewModel)
+//
+//                                .navigationBarHidden(true)
+//                                .task {
+//                                    do {
+//                                        Manager.AnswerTracker.shared.startQuiz(questionAmount: viewModel.numberQuestions)
+//                                        Manager.AnswerTracker.shared.startQuiz(questionAmount: viewModel.numberQuestions)
+//                                        let questions = try await Manager.API.shared.fetchQuestions(
+//                                            category: Manager.API.QuestionCategory.allCases[selectedCategoryIndex],  answerType: Manager.API.AnswerTypes.multiple,
+//                                            amount: viewModel.numberQuestions
+//                                        )
+//                                        questionsViewModel.update(question: questions.first!)
+//                                    } catch {
+//                                        print(error)
+//                                    }
+//                                }
+//
+//                            ){
+//
+//                                Text("Start")
+//                                    .fontWeight(.semibold)
+//                                    .foregroundColor(.white)
+//
+//                            }
+//
+//
+//                        }
+//                        .background{
+//                            RoundedRectangle(cornerRadius: 8)
+//                                .fill(Color("Blue"))
+//                                .frame(width: 400, height: 50)
+//                        }
+//                        .offset(y:200)
+                   
+                        
                     }
-                    .padding(.vertical,-85)
+                    .offset(y: -35)
+                   // .padding(.vertical,-85)
+                    .padding(.vertical,-52)
+                   // .padding(-15)
+                    VStack{
+                      
+                                             NavigationLink(destination: QuestionView(viewModel: questionsViewModel)
+                 
+                                                 .navigationBarHidden(true)
+                                                 .task {
+                                                     do {
+                                                         Manager.AnswerTracker.shared.startQuiz(questionAmount: viewModel.numberQuestions)
+                                                         Manager.AnswerTracker.shared.startQuiz(questionAmount: viewModel.numberQuestions)
+                                                         let questions = try await Manager.API.shared.fetchQuestions(
+                                                             category: Manager.API.QuestionCategory.allCases[selectedCategoryIndex],  answerType: Manager.API.AnswerTypes.multiple,
+                                                             amount: viewModel.numberQuestions
+                                                         )
+                                                         questionsViewModel.update(question: questions.first!)
+                                                     } catch {
+                                                         print(error)
+                                                     }
+                                                 }
+                 
+                                             ){
+                 
+                                                 Text("Start")
+                                                     .font(.system(size: 22))
+                                                     .fontWeight(.bold)
+                                                     .foregroundColor(.white)
+                                                     .offset(y: -2)
+                                                     .background{
+                                                         RoundedRectangle(cornerRadius: 8)
+                                                             .fill(Color("Blue"))
+                                                             .frame(width: 400, height: 55)
+                                                     }
+                                                     
+                                             }
+                 
+                 
+                                         }
+                                         
+                                         .offset(y:22)
                     
                     
-                    //  }
+                  //    }
                     
                 }
                 
