@@ -117,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				AC18FB562A33425E0055CC99 /* CategoryView.swift */,
-				AC3C36362A348BC7005EFFB5 /* QuestionView.swift */,
 				AC3C36382A348CAF005EFFB5 /* Views.swift */,
+				AC3C36362A348BC7005EFFB5 /* QuestionView.swift */,
 				AC3C36492A3492C6005EFFB5 /* ConclusionView.swift */,
 			);
 			path = View;
@@ -129,8 +129,8 @@
 			children = (
 				AC18FB592A3342A60055CC99 /* Manager.swift */,
 				AC18FB5B2A3342E20055CC99 /* APIManager.swift */,
-				AC18FB622A3349650055CC99 /* SaveSystemManager.swift */,
 				AC3C36472A349273005EFFB5 /* AnswerTrackerManager.swift */,
+				AC18FB622A3349650055CC99 /* SaveSystemManager.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
