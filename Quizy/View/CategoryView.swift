@@ -149,7 +149,7 @@ extension Views{
                  
                                              ){
                  
-                                                 Text("Start")
+                                                 Text("Start Quiz")
                                                      .font(.system(size: 22))
                                                      .fontWeight(.bold)
                                                      .foregroundColor(.white)
