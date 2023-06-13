@@ -54,8 +54,7 @@ extension Views {
                             .offset(y: -150)
                         VStack(spacing: DesignSystem.Padding.microPadding) {
                             VStack{
-                                // List{
-                                //   Section{
+                           
                                 VStack{
                                     HStack{
                                         Text("Correct Answers:")
@@ -94,10 +93,10 @@ extension Views {
                             }
                             .padding(10)
                           
-                            // }
+                         
                             
                             .padding(.vertical,-95)
-                            // }
+                         
                             VStack{
                                 NavigationLink(destination: CategoryView(viewModel: .init()).navigationBarHidden(true)) {
                                     Text("Start Again")

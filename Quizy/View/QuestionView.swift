@@ -98,9 +98,7 @@ extension Views {
                     }
                 } else if currentQuestion >= Manager.API.shared.questions.count - 1 && self.isAnimating {
                     NavigationLink(destination: ConclusionView(viewModel: .init()).navigationBarHidden(true)
-//                        .onAppear {
-//                            Manager.SFX.playSound(sound: .finished)
-//                        }
+
                     ) {
                         VStack{
                             Text("Finish quiz")
