@@ -22,17 +22,22 @@ extension Views {
             ZStack {
                 Color("BlueLight1")
                .edgesIgnoringSafeArea(.all)
-                if viewModel.answers.count == 0 {
-                    renderBody(answerType: .multiple, isAnimating: $isAnimating)
+                VStack{
+                    if viewModel.answers.count == 0 {
+                        renderBody(answerType: .multiple, isAnimating: $isAnimating)
+                            .padding(.horizontal, DesignSystem.Padding.macroPadding)
+                            .redacted(reason: .placeholder)
+                    } else {
+                        renderBody(
+                            answerType: viewModel.answerType,
+                            isAnimating: $isAnimating
+                            
+                        )
+                       
                         .padding(.horizontal, DesignSystem.Padding.macroPadding)
-                        .redacted(reason: .placeholder)
-                } else {
-                    renderBody(
-                        answerType: viewModel.answerType,
-                        isAnimating: $isAnimating
-                    )
-                    .padding(.horizontal, DesignSystem.Padding.macroPadding)
+                    }
                 }
+                .offset(y: -50)
             }
         }
 
@@ -40,13 +45,16 @@ extension Views {
             answerType: Manager.API.AnswerTypes,
             isAnimating: Binding<Bool>
         ) -> some View {
-            VStack(spacing: DesignSystem.Padding.microPadding) {
-                Text(viewModel.title)
-                    .bold()
-                    .padding(.bottom, DesignSystem.Padding.macroPadding)
+            VStack(alignment:.leading ,spacing: DesignSystem.Padding.macroPadding) {
+//                Text(viewModel.title)
+//                    .bold()
+//                    .padding(.bottom, DesignSystem.Padding.macroPadding)
                 Text(viewModel.question)
+                    .font(.system(size: 20))
                     .bold()
                     .padding(.bottom, DesignSystem.Padding.macroPadding)
+                    .padding(.vertical,15)
+                    .offset(y: -10)
                 switch answerType {
                 case .multiple:
                     ForEach(0 ..< 4) { index in
@@ -96,6 +104,7 @@ extension Views {
                         }
                         .padding()
                     }
+                    .offset(x:105)
                 } else if currentQuestion >= Manager.API.shared.questions.count - 1 && self.isAnimating {
                     NavigationLink(destination: ConclusionView(viewModel: .init()).navigationBarHidden(true)
 
@@ -110,10 +119,14 @@ extension Views {
                                 .fill(.red)
                                 .frame(width: 165, height: 45)
                         }
+                       
                         .padding()
                     }
+                    .offset(x:120)
                 }
+                   
             }.foregroundColor(.black)
+                
                 .padding(DesignSystem.Padding.macroPadding)
         }
     }

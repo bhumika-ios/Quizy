@@ -10,10 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-      //   Views.MainView(viewModel: .init())
             Views.CategoryView(viewModel: .init())
         }
-       // .padding()
     }
 }
 

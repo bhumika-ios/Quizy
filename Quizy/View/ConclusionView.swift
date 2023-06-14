@@ -48,10 +48,10 @@ extension Views {
                         .offset(y: -150)
                         .padding(10)
                         Text("Your Score")
-                            .foregroundColor(Color("Blue"))
-                            .font(.system(size: 22))
+                            .foregroundColor(.black)
+                            .font(.system(size: 32))
                             .fontWeight(.bold)
-                            .offset(y: -150)
+                            .offset(y: -120)
                         VStack(spacing: DesignSystem.Padding.microPadding) {
                             VStack{
                            
@@ -112,7 +112,7 @@ extension Views {
                                 }
                             }
                             
-                            .offset(y: 275)
+                            .offset(y: 265)
                         }
                     }.task {
                         animateCircle()

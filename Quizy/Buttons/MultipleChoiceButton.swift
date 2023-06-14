@@ -26,7 +26,6 @@ extension Views {
             SwiftUI.Button(
                 action: {
                     isAnimating = true
-                  //  Manager.SFX.playSound(sound: isCorrect ? .correct: .wrong)
                     Manager.AnswerTracker.shared.addResult(answerStatus: isCorrect)
                 }
             ) {
@@ -46,9 +45,6 @@ extension Views {
                 RoundedRectangle(cornerRadius: Constants.rectangleCornerRadius, style: .circular)
                     .fill(Color.white)
             )
-//                .overlay(RoundedRectangle(cornerRadius: Constants.rectangleCornerRadius)
-//                    .stroke(Color.black, lineWidth: Constants.strokeLineWidth)
-//            )
                 .padding(.bottom, DesignSystem.Padding.padding)
                 .disabled(isAnimating)
         }

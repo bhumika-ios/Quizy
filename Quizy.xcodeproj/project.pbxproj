@@ -28,7 +28,6 @@
 		AC3C36482A349273005EFFB5 /* AnswerTrackerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C36472A349273005EFFB5 /* AnswerTrackerManager.swift */; };
 		AC3C364A2A3492C6005EFFB5 /* ConclusionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C36492A3492C6005EFFB5 /* ConclusionView.swift */; };
 		AC3C364F2A349453005EFFB5 /* correct.json in Resources */ = {isa = PBXBuildFile; fileRef = AC3C364C2A349453005EFFB5 /* correct.json */; };
-		AC3C36502A349453005EFFB5 /* wave.json in Resources */ = {isa = PBXBuildFile; fileRef = AC3C364D2A349453005EFFB5 /* wave.json */; };
 		AC3C36512A349453005EFFB5 /* wrong.json in Resources */ = {isa = PBXBuildFile; fileRef = AC3C364E2A349453005EFFB5 /* wrong.json */; };
 		AC74F10F2A36FAF400AEAC6B /* BooleanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74F10E2A36FAF400AEAC6B /* BooleanButton.swift */; };
 /* End PBXBuildFile section */
@@ -55,7 +54,6 @@
 		AC3C36472A349273005EFFB5 /* AnswerTrackerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTrackerManager.swift; sourceTree = "<group>"; };
 		AC3C36492A3492C6005EFFB5 /* ConclusionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConclusionView.swift; sourceTree = "<group>"; };
 		AC3C364C2A349453005EFFB5 /* correct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = correct.json; sourceTree = "<group>"; };
-		AC3C364D2A349453005EFFB5 /* wave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wave.json; sourceTree = "<group>"; };
 		AC3C364E2A349453005EFFB5 /* wrong.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wrong.json; sourceTree = "<group>"; };
 		AC74F10E2A36FAF400AEAC6B /* BooleanButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +96,6 @@
 				AC18FB582A33428B0055CC99 /* APIManager */,
 				AC18FB552A3342410055CC99 /* View */,
 				AC18FB472A33312F0055CC99 /* QuizyApp.swift */,
-				AC18FB492A33312F0055CC99 /* ContentView.swift */,
 				AC18FB4B2A3331310055CC99 /* Assets.xcassets */,
 				AC18FB4D2A3331310055CC99 /* Preview Content */,
 			);
@@ -116,6 +113,7 @@
 		AC18FB552A3342410055CC99 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC18FB492A33312F0055CC99 /* ContentView.swift */,
 				AC18FB562A33425E0055CC99 /* CategoryView.swift */,
 				AC3C36382A348CAF005EFFB5 /* Views.swift */,
 				AC3C36362A348BC7005EFFB5 /* QuestionView.swift */,
@@ -168,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				AC3C364C2A349453005EFFB5 /* correct.json */,
-				AC3C364D2A349453005EFFB5 /* wave.json */,
 				AC3C364E2A349453005EFFB5 /* wrong.json */,
 			);
 			path = Lottie;
@@ -239,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC3C36512A349453005EFFB5 /* wrong.json in Resources */,
-				AC3C36502A349453005EFFB5 /* wave.json in Resources */,
 				AC18FB4F2A3331310055CC99 /* Preview Assets.xcassets in Resources */,
 				AC18FB4C2A3331310055CC99 /* Assets.xcassets in Resources */,
 				AC3C364F2A349453005EFFB5 /* correct.json in Resources */,
