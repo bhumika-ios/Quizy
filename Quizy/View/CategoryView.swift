@@ -37,15 +37,17 @@ extension Views{
 
                     }
                     ZStack{
+                   
                      ScrollView(.vertical) {
+                     
                             LazyVGrid(columns: columns, spacing: 5) {
                                 ForEach(0 ..< Manager.API.QuestionCategory.allCases.count, id: \.self) {cat in
                                     Button(action: {
                                         self.alert = true
                                         selectedCategoryIndex = cat
-                                     
+
                                     }, label: {
-                                        
+
                                         Text(Manager.API.QuestionCategory.allCases[cat].categoryName)
                                             .foregroundColor(cat == selectedCategoryIndex ? .white : Color("Blue"))
                                             .fontWeight(.bold)
