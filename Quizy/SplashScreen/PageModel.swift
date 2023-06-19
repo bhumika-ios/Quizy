@@ -16,9 +16,6 @@ struct PageModel: Identifiable, Hashable{
     
 }
 
-//Unlock your knowledge, one question at a time.
-//Unlock Your Knowledge: Quiz with the Best
-//Unlock Your Knowledge with QuizMaster: The Ultimate Quiz App Experience
 var pageModel: [PageModel] = [
     .init(image: "P3", title: "Quiz with the Best", subTitle: ""),
     .init(image: "P1", title: "Explore knowledge", subTitle: "Explore various categories and expand your knowledge"),

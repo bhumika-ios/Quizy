@@ -30,7 +30,6 @@
 		AC3C364F2A349453005EFFB5 /* correct.json in Resources */ = {isa = PBXBuildFile; fileRef = AC3C364C2A349453005EFFB5 /* correct.json */; };
 		AC3C36512A349453005EFFB5 /* wrong.json in Resources */ = {isa = PBXBuildFile; fileRef = AC3C364E2A349453005EFFB5 /* wrong.json */; };
 		AC74F10F2A36FAF400AEAC6B /* BooleanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74F10E2A36FAF400AEAC6B /* BooleanButton.swift */; };
-		ACB009AC2A3B04BA007C9F42 /* CustomPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB009AB2A3B04BA007C9F42 /* CustomPageView.swift */; };
 		ACB009AE2A3B04EA007C9F42 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB009AD2A3B04EA007C9F42 /* Page.swift */; };
 		ACBFE87B2A3AEEEA0056890F /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBFE87A2A3AEEEA0056890F /* PageModel.swift */; };
 /* End PBXBuildFile section */
@@ -59,7 +58,6 @@
 		AC3C364C2A349453005EFFB5 /* correct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = correct.json; sourceTree = "<group>"; };
 		AC3C364E2A349453005EFFB5 /* wrong.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wrong.json; sourceTree = "<group>"; };
 		AC74F10E2A36FAF400AEAC6B /* BooleanButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanButton.swift; sourceTree = "<group>"; };
-		ACB009AB2A3B04BA007C9F42 /* CustomPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageView.swift; sourceTree = "<group>"; };
 		ACB009AD2A3B04EA007C9F42 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		ACBFE87A2A3AEEEA0056890F /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				ACBFE87A2A3AEEEA0056890F /* PageModel.swift */,
-				ACB009AB2A3B04BA007C9F42 /* CustomPageView.swift */,
 				ACB009AD2A3B04EA007C9F42 /* Page.swift */,
 			);
 			path = SplashScreen;
@@ -270,7 +267,6 @@
 				AC3C36372A348BC7005EFFB5 /* QuestionView.swift in Sources */,
 				AC3C36432A3491E0005EFFB5 /* MultipleChoiceButton.swift in Sources */,
 				AC3C364A2A3492C6005EFFB5 /* ConclusionView.swift in Sources */,
-				ACB009AC2A3B04BA007C9F42 /* CustomPageView.swift in Sources */,
 				AC3C36392A348CAF005EFFB5 /* Views.swift in Sources */,
 				AC18FB612A3346350055CC99 /* Data.swift in Sources */,
 				AC3C363E2A349134005EFFB5 /* Color.swift in Sources */,

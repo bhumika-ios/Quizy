@@ -62,7 +62,6 @@ extension Views{
                         }
                         .background(
                             Color("BlueLight1")
-                            // apply custom corner
                                 .clipShape(CustomCorner(corner: [.topLeft,.topRight], radius: 25))
                                 .ignoresSafeArea()
                         )

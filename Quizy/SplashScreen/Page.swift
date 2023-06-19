@@ -86,11 +86,7 @@ struct PageView<ActionView: View>: View{
                 if !page.displayAction{
                     Group{
                         Spacer(minLength: 25)
-//                        CustomPageView(totalPage: filteredPages.count, currentPage: filteredPages.firstIndex(of: page) ?? 0)
-//                            .frame(maxWidth: .infinity)
-                        
-                        Spacer(minLength: 5)
-                        
+
                         Button{
                             changePage()
                         }label: {
@@ -126,22 +122,6 @@ struct PageView<ActionView: View>: View{
         .offset(y:50)
         .offset(y: wholeView ? size.height / 2 : 0)
         .opacity(wholeView ? 0 : 1)
-//        .overlay(alignment: .topLeading){
-//            if page != pageModel.first{
-//                Button{
-//                    changePage(true)
-//                } label: {
-//                    Image(systemName: "chevron.left")
-//                        .font(.title2)
-//                        .fontWeight(.semibold)
-//                        .foregroundColor(.black)
-//                        .contentShape(Rectangle())
-//                }
-//                .padding(10)
-//                .offset(y: showView ? 0 : -200)
-//                .offset(y: wholeView ? -200 : 0)
-//            }
-//        }
         .onAppear{
             withAnimation(.spring(response: 0.8, dampingFraction: 0.8, blendDuration: 0).delay(0.1)){
                 showView = true

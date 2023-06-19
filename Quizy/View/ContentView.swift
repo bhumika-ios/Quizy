@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-           // Views.CategoryView(viewModel: .init())
             Page()
         }
     }

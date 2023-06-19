@@ -46,9 +46,6 @@ extension Views {
             isAnimating: Binding<Bool>
         ) -> some View {
             VStack(alignment:.leading ,spacing: DesignSystem.Padding.macroPadding) {
-//                Text(viewModel.title)
-//                    .bold()
-//                    .padding(.bottom, DesignSystem.Padding.macroPadding)
                 Text(viewModel.question)
                     .font(.system(size: 20))
                     .bold()
@@ -94,6 +91,7 @@ extension Views {
                             Text("Next Question")
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
+                            }
                         }
                         
                         .background{
@@ -101,9 +99,10 @@ extension Views {
                                 .fill(Color("Blue"))
                                 .frame(width: 165, height: 45)
                             
+                            
                         }
                         .padding()
-                    }
+                       
                     .offset(x:105)
                 } else if currentQuestion >= Manager.API.shared.questions.count - 1 && self.isAnimating {
                     NavigationLink(destination: ConclusionView(viewModel: .init()).navigationBarHidden(true)
