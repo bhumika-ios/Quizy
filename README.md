@@ -1,7 +1,8 @@
 # QuizApp
 
-## Video
-https://github.com/bhumika-ios/Quizy/assets/109663223/3416463c-74c0-4506-b3c2-7a9c4a14a365
+## Images
+
+![pattern 2](https://github.com/bhumika-ios/Quizy/assets/109663223/92146445-7ec0-43f9-a200-910906a49dab)
 
 ## Description 
 Developed QuizApp, the ultimate trivia challenge on your iPhone! Test your knowledge from around the world in a fun and engaging quiz experience..
