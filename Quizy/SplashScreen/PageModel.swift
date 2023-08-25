@@ -17,8 +17,8 @@ struct PageModel: Identifiable, Hashable{
 }
 
 var pageModel: [PageModel] = [
-    .init(image: "quiz logo", title: "Quiz with the Best", subTitle: ""),
-    .init(image: "P1", title: "Explore knowledge", subTitle: "Explore various categories and expand your knowledge"),
+    .init(image: "quiz1", title: "Explore knowledge", subTitle: "Explore various categories and expand your knowledge"),
+    .init(image: "P1", title: "Test Your Knowledge", subTitle: "Quiz with descriptions to test your knowledge"),
     .init(image: "P2", title: "Climb leaderboard", subTitle: "Compete for the top score and climb the leaderboard", displayAction: true),
     
 ]

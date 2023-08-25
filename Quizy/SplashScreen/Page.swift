@@ -79,7 +79,7 @@ struct PageView<ActionView: View>: View{
             VStack(alignment:.leading, spacing: 10){
              //   Spacer(minLength: 0)
                 Text(page.title)
-                    .font(.system(size: 40))
+                    .font(.system(size: 30))
                     .fontWeight(.semibold)
                 Text(page.subTitle)
                   
